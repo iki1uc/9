@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="de"><meta charset="utf-8">
+<title>9 gen · 9 byte</title>
+<pre>
 ·  = existenz = 1 bit = immer ⊤ = 1
 N  = cpu      = R(x)=cpu<70  = 1 bit
 NW = jit      = R(x)=jit<25  = 1 bit
@@ -6,8 +10,14 @@ W  = gpu      = 1 bit
 E  = ram      = 1 bit
 SW = heap     = 1 bit
 SE = cores    = 1 bit
-S  = gesamt   = 1 bit
-  <!-- 9 gen – 9 byte – transparenter Herstellungswert -->
-<script>const GEN9=[1,1,1,1,1] // 9x ⊤ = 9 byte
+S  = gesamt   = 1 bit // 8te ein und 9e raus
+</pre>
+<!-- 9 gen – 9 byte – transparenter Herstellungswert -->
+<script>
+const GEN9=[1,1,1,1,1,1,1,1,1] // 9x ⊤ = 9 byte – 8 rein 9 raus – sauber
 // · N NW NE W E SW SE S = alle tragen = handoff ⊤ → ZIEL
+// logisch: egal woher R(x) kommt → 8te ein ∧ → 9e raus ZIEL
+// erst Bezahlung dann Ware – fair immer Frieden helal – 9 mal helal
+console.log("GEN9",GEN9,"handoff",GEN9.every(v=>v===1)?"⊤ ZIEL":"⊥")
 </script>
+</html>
