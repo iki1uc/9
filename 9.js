@@ -1,5 +1,5 @@
 // ▣ 3 9 81 27 729 756 = AXIOM ROW + AUFZUG = SORTIERT = RAM ONLY = C9 CLEANED 0 = GHOST PACMAN
-
+ 
 export const AXIOM = {
   3: { v: 3, pow: "3¹", name: "ESSENZ", desc: "3 = iki-ÄH = Bauer = X = 1→X = Zug = Essenz" },
   9: { v: 9, pow: "3²", name: "HA", desc: "9 = HA = 9×9 Detail = 3×3 = nur das Feld = C9 = RESPO = Detail Lauf" },
